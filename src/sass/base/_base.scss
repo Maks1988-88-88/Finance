@@ -1,0 +1,76 @@
+body {
+  font-family: $main-font;
+  background-color: $primary-bgc;
+
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: $primary-text-color;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%button {
+  display: block;
+  height: 45px;
+  width: 155px;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 5px;
+  color: $white-text-color;
+
+  line-height: 1.6;
+
+  @media screen and (min-width: $tablet) {
+    height: 50px;
+    width: 165px;
+
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+%subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: 400;
+
+  text-align: center;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+%description {
+  text-align: center;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 0;
+  }
+}
+
+%title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  color: $white-text-color;
+}

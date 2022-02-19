@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  padding-top: 20px;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    height: 70px;
+    padding-top: 10px;
+  }
+
+  z-index: 10;
+
+  &__scroll {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+}
+
+.navigation {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 20px;
+  }
+}
+
+.logo__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 65px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 557px;
+  }
+}
+
+.logo__icon {
+  width: 40px;
+  height: 35px;
+  color: $accent-color;
+  margin-right: 5px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 30px;
+  }
+}
+
+.logo {
+  @extend %link;
+  font-size: 32px;
+  line-height: 1.32;
+  color: $white-text-color;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  transition: transform $time-main $timing-function-main;
+
+  & .accent {
+    color: $accent-color;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 35px;
+    line-height: 1.21;
+  }
+}
+
+.navigation__list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.navigation__link {
+  @extend %link;
+  position: relative;
+  padding-bottom: 5px;
+
+  color: $white-text-color;
+
+  &:hover::after,
+  &:focus::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: $accent-color;
+    border-radius: 2px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

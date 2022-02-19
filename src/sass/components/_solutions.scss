@@ -1,0 +1,117 @@
+.solutions {
+  background-color: $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    height: 564px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    height: 460px;
+  }
+
+  &--blog {
+    background-color: #0284d0;
+
+    @media screen and (min-width: $tablet) {
+      height: 468px;
+      flex-direction: row-reverse;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 517px;
+    }
+  }
+}
+
+.image__wrapper {
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 2);
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.solutions__container {
+  padding: 30px;
+
+  flex-basis: calc(100% / 2);
+
+  @media screen and (min-width: $desktop) {
+    padding: 78px 30px 82px 30px;
+  }
+
+  &--blog {
+    @media screen and (min-width: $desktop) {
+      padding: 112px 0px 112px 30px;
+    }
+  }
+}
+
+.solutions__image {
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+    max-width: none;
+    margin: 0% 0% 0% -62%;
+
+    &--blog {
+      margin: 0% 0% 0% -30%;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0% 0% 0% 0%;
+  }
+}
+
+.solutions__subtitle {
+  @extend %subtitle;
+  color: $white-text-color;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.solutions__title {
+  @extend %title;
+  margin-bottom: 25px;
+}
+
+.solutions__description {
+  @extend %description;
+
+  text-align: start;
+  color: $white-text-color;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.solutions__button {
+  @extend %button;
+  outline: 1px solid $white-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-bgc;
+    outline: none;
+    color: $primary-text-color;
+  }
+
+  transition: all $time-main $timing-function-main;
+
+  &--blog {
+    background-color: transparent;
+    width: 184px;
+
+    @media screen and (min-width: $tablet) {
+      width: 196px;
+    }
+  }
+}
