@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;AAIc,aAJd,QAAA,oBACA,QAAA","file":"src.e18f59a4.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss';\nimport 'modern-normalize/modern-normalize.css';\n\n\n{/* <test> */}\n"]}
