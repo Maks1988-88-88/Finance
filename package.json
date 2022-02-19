@@ -1,8 +1,9 @@
 {
-  "name": "finance",
+  "name": "Finance",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://Maks1988-88-88.github.io/Finance",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Finance/",
@@ -10,11 +11,15 @@
     "deploy": "netlify deploy -p"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/Maks1988-88-88.github.io/Finance.git"
   },
   "keywords": [],
   "author": "Maksim Tsopa <max1988-88-88@bigmir.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maks1988-88-88.github.io/Finance/issues"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
