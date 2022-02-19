@@ -6,9 +6,9 @@
   "homepage": "https://Maks1988-88-88.github.io/Finance",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Finance/",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url /Finance/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
+    "gh-pages": "^3.2.3",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0"
